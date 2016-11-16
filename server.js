@@ -1,5 +1,7 @@
-var http = require('http');
+var http = require('http'),
+   express = require('express'),
     fs      = require('fs'),
+    
     app     = express(),
     eps     = require('ejs'),
     morgan  = require('morgan');
