@@ -26,7 +26,7 @@ http.createServer(function (req, res) {
   			 "\n</html>";
 
   res.end(html);
-}).listen(port , ipaddr );
+}).listen(port , ip );
 
 
 console.log('Server running at http://127.0.0.1:3000/');
