@@ -9,7 +9,10 @@
     "body-parser":"*", 
     "cookie-parser":"*", 
     "express-session": "*",
-    "http": "*"
+    "http": "*",
+    "express": "^4.13.4",
+     "object-assign":"4.1.0"
+      
   },
    "scripts": {
     "start": "node server.js",

@@ -1,8 +1,13 @@
 var http = require('http');
+    fs      = require('fs'),
+    app     = express(),
+    eps     = require('ejs'),
+    morgan  = require('morgan');
+    
+Object.assign=require('object-assign')
 
-var ipaddr  = process.env.OPENSHIFT_INTERNAL_IP || "127.0.0.1"; 
-var port    = process.env.OPENSHIFT_INTERNAL_PORT || 8080; 
-
+var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
+    ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0'
 
 
 http.createServer(function (req, res) {
